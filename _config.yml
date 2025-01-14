@@ -22,11 +22,11 @@ repository               : "valiaEft/valiaEft.github.io"
 author:
   # Biographic information
   avatar           : "cappucino.jpg"
-  name             : "Your Sidebar Name"
+  name             : "Valia Efthymiou"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "ORC"
+  bio              : "Phd at ORC"
+  location         : "Boston"
+  employer         : 
   uri              : # URL
   email            : "valia554@mit.edu" 
 

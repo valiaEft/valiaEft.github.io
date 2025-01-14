@@ -6,16 +6,11 @@
 
 main:
   - title: "Publications"
-    url: /publications/
+    url: /publications/ 
 
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
+  - title: "Experience"
     url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
         
   - title: "Blog Posts"
     url: /year-archive/
@@ -23,5 +18,5 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
+  - title: "Miscallaneous"
     url: /markdown/

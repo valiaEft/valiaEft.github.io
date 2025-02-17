@@ -21,7 +21,7 @@ repository               : "valiaEft/valiaEft.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "cappucino.jpg"
+  avatar           : "me.jpg"
   name             : "Valia Efthymiou"
   pronouns         : # example: "she/her"  
   bio              : "Phd at ORC"

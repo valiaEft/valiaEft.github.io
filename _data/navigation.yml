@@ -8,15 +8,15 @@ main:
   - title: "Publications"
     url: /publications/ 
 
-  - title: "Experience"
+  - #title: "Experience"
     url: #/teaching/    
     
         
   - title: "Blog Posts"
-    url: #/year-archive/
+    url: /year-archive/
     
   - title: "CV"
-    url: #/cv/
+    url: /cv/
     
   - title: "Miscellaneous"
     url: /Miscellaneous

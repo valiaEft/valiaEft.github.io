@@ -1,1 +1,17 @@
+---
+layout: archive
+title: ""
+permalink: /miscellaneous/
+author_profile: true
+---
 
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a sketch of depecting the concept of my work!</a></p>
+![](/images/human_inputs.jpg)
+
+{% endif %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}

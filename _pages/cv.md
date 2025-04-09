@@ -11,12 +11,10 @@ redirect_from:
 
 Education
 ======
-2018-2024 : Electrical and Computer Engineering, National Technical University of Athens (_Honors)  
-2024-     : PhD in Operations Research Center MIT
-_
-
+- 2018-2024 : Electrical and Computer Engineering, National Technical University of Athens (_Honors)  
+- 2024-     : PhD in Operations Research Center MIT
   
-%Skills
+Skills
 ======
 * Programming languages: Python, Cpp, Julia
   

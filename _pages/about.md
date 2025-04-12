@@ -10,4 +10,4 @@ I am a PhD student at MIT’s Operations Research Center, where I feel extremely
 
 Research wise I am interested in the interplay between machine learning algorithms and humans. In particular, I am interested into exploring how algorithmic performance and fairness shift when data come from individuals actively adapting—strategically, socially, or cognitively—to the algorithm’s outputs.
 
-Contact me at <span style="color:blue">valia554@mit.edu</span>.
+Contact me at <span style="color:#00A3A3">valia554@mit.edu</span>.

@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-- _2018-2024_ : Electrical and Computer Engineering, National Technical University of Athens (Honors)  
-- _2024-_.... : PhD in Operations Research Center MIT
+- `2018-2024` : Electrical and Computer Engineering, National Technical University of Athens (Honors)  
+- `2024-....` : PhD in Operations Research Center MIT
   
 Skills
 ======

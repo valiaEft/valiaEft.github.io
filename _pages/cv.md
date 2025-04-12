@@ -16,5 +16,5 @@ Education
   
 Skills
 ======
-* Programming languages: Python, Cpp, Julia
+* Programming languages: `Python`, `Cpp`, `Julia`
   

@@ -11,8 +11,22 @@ var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
+var mobileBreak = 600;
 
 function updateNav() {
+  if ($(window).width() < mobileBreak) {
+    while ($vlinks.children('*:not(.masthead__menu-item--lg)').length) {
+      breaks.push($vlinks.width());
+      $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
+    }
+
+    if ($hlinks.children().length) {
+      $btn.removeClass('hidden');
+      $btn.attr("count", $hlinks.children().length);
+    }
+
+    return;
+  }
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
@@ -20,10 +34,12 @@ function updateNav() {
   if($vlinks.width() > availableSpace) {
 
     // Record the width of the list
-    breaks.push($vlinks.width());
+    if ($vlinks.children('*:not(.masthead__menu-item--lg)').length) {
+      breaks.push($vlinks.width());
 
-    // Move item to the hidden list
-    $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
+      // Move item to the hidden list
+      $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
+    }
 
     // Show the dropdown btn
     if($btn.hasClass('hidden')) {
@@ -34,11 +50,12 @@ function updateNav() {
   } else {
 
     // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
+    while(breaks.length && availableSpace > breaks[breaks.length-1]) {
 
       // Move the item to the visible list
       $hlinks.children().first().appendTo($vlinks);
       breaks.pop();
+      availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
     }
 
     // Hide the dropdown btn if hidden list is empty

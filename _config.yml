@@ -24,9 +24,12 @@ author:
   avatar           : "me.jpeg"
   name             : "Valia Efthymiou"
   pronouns         : # example: "she/her"  
-  bio              : "Phd at ORC"
-  location         : "Boston"
-  employer         : 
+  bio              : "PhD Candidate, MIT Operations Research Center"
+  location         :
+  employer         :
+  graduation       : "Expected graduation: 2028"
+  advisor          : "Advisor: Chara Podimata"
+  fellowship       :
   uri              : # URL
   email            : "valia554@mit.edu" 
 

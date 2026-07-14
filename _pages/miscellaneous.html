@@ -37,6 +37,34 @@ author_profile: true
 .misc-notes li {
   margin-bottom: 0.4em;
 }
+
+/* Hand-drawn aside pointing up at the sidebar profile photo. The script below
+   slots it in directly beneath the photo; hidden once the sidebar stops
+   sitting beside the content and restacks above it. */
+.photo-note {
+  position: relative;
+  display: none;
+  margin: 0.6em 0 1.6em;
+  padding: 2.6em 0 0 3.4em;
+}
+.photo-note__text {
+  font-family: "Bradley Hand", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #9aa0a6;
+  transform: rotate(-2deg);
+}
+.photo-note__arrow {
+  position: absolute;
+  top: 0.1em;
+  left: 0.4em;
+  width: 3em;
+  height: 3.2em;
+  overflow: visible;
+}
+@media (min-width: 1024px) {
+  .photo-note { display: block; }
+}
 </style>
 
 <div class="misc-grid">
@@ -62,3 +90,24 @@ author_profile: true
     <li>I volunteer at the <a href="https://doingwell.mit.edu/wellbeinglab/">MIT Well-Being Lab</a>.</li>
   </ul>
 </div>
+
+<template id="photo-note-template">
+  <div class="photo-note">
+    <svg class="photo-note__arrow" viewBox="0 0 60 64" fill="none" aria-hidden="true">
+      <path d="M54 60 C 44 44, 40 30, 22 12" stroke="#9aa0a6" stroke-width="1.6"
+            stroke-linecap="round"/>
+      <path d="M18 26 L 20 10 L 36 14" stroke="#9aa0a6" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="photo-note__text">a very non-representative photo of how I look most days</div>
+  </div>
+</template>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var avatar = document.querySelector(".sidebar .author__avatar");
+    var template = document.getElementById("photo-note-template");
+    if (!avatar || !template) return;
+    avatar.insertAdjacentElement("afterend", template.content.firstElementChild);
+  });
+</script>

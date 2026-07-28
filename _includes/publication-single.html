@@ -1,0 +1,31 @@
+{% include base_path %}
+
+<div class="publication">
+  <div class="publication__meta">
+    {% if post.venue %}<span class="publication__badge">{{ post.venue }}</span>{% endif %}
+    {% if post.venue_full %}<span class="publication__venue-full">{{ post.venue_full }}</span>{% endif %}
+  </div>
+
+  <h3 class="publication__title">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
+  </h3>
+
+  {% if post.authors %}
+    {% capture author_highlight %}<span class="publication__me">{{ site.author.name }}</span>{% endcapture %}
+    <p class="publication__authors">{{ post.authors | replace: site.author.name, author_highlight }}</p>
+  {% endif %}
+
+  {% if post.excerpt and post.excerpt != '' %}
+    <p class="publication__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+
+  <p class="publication__links">
+    {% if post.paperurl %}<a class="publication__link" href="{{ post.paperurl }}">Paper</a>{% endif %}
+    {% if post.code %}<a class="publication__link" href="{{ post.code }}">Code</a>{% endif %}
+    {% if post.slides %}<a class="publication__link" href="{{ post.slides }}">Slides</a>{% endif %}
+  </p>
+</div>

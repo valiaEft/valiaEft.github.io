@@ -27,8 +27,8 @@ author:
   bio              : "PhD Candidate, MIT Operations Research Center"
   location         :
   employer         :
-  graduation       : "Expected graduation: 2028"
-  advisor          : "Advisor: Chara Podimata"
+  graduation       :
+  advisor          :
   fellowship       :
   uri              : # URL
   email            : "valia554@mit.edu" 

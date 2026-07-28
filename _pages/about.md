@@ -21,7 +21,7 @@ Research wise I am interested in the interplay between machine learning algorith
   <ul class="interest-tags">
     <li>Algorithmic Fairness</li>
     <li>Strategic Classification</li>
-    <li>Performative Prediction</li>
+    <li>Trustworthy ML</li>
     <li>Optimization</li>
     <li>Game Theory</li>
     <li>Machine Learning</li>

@@ -8,9 +8,6 @@ main:
   - title: "About"
     url: /
 
-  - title: "Research"
-    url: /#research-interests
-
   - title: "Publications"
     url: /publications/ 
 

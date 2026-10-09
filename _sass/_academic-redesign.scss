@@ -41,6 +41,7 @@ a {
 .greedy-nav {
   min-width: 0;
   background: transparent;
+  font-family: $serif;
 }
 
 .greedy-nav .visible-links {
@@ -76,11 +77,6 @@ a {
   gap: 1rem;
 }
 
-.site-title .fa-graduation-cap {
-  color: $mit-red;
-  font-size: 1.35rem;
-}
-
 .site-title__text {
   display: grid;
   gap: 0.08rem;
@@ -96,11 +92,17 @@ a {
 
 .site-title__subtitle {
   color: $muted;
+  font-family: $serif;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.greedy-nav .hidden-links,
+.greedy-nav .hidden-links a {
+  font-family: $serif;
 }
 
 #main {
@@ -190,7 +192,7 @@ a {
 }
 
 .page__content {
-  font-size: 1.12rem;
+  font-size: 1rem;
 }
 
 .page__content p {
@@ -229,6 +231,7 @@ a {
 .home-intro__subtitle {
   margin-top: 0.6rem;
   color: $muted;
+  font-family: $serif;
   font-size: 1.28rem;
   font-weight: 650;
 }
@@ -271,7 +274,7 @@ a {
    ========================================================================== */
 
 .archive {
-  font-size: 1.12rem;
+  font-size: 1rem;
 }
 
 .archive .page__title {

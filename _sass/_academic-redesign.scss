@@ -219,7 +219,12 @@ a {
 }
 
 .home-intro {
+  display: grid;
+  justify-items: center;
+  width: max-content;
+  max-width: 100%;
   margin-bottom: 2.25rem;
+  text-align: center;
 }
 
 .home-intro h1 {
@@ -229,7 +234,7 @@ a {
 }
 
 .home-intro__subtitle {
-  margin-top: 0.6rem;
+  margin: 0.6rem 0 0;
   color: $muted;
   font-family: $serif;
   font-size: 1.28rem;

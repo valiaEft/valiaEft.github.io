@@ -9,6 +9,48 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+.cv-entry {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid #a31f16;
+  border-radius: 4px;
+  background: #fafafa;
+}
+.cv-entry__date {
+  color: #69717d;
+  font-size: 0.9rem;
+  font-weight: 650;
+  padding-top: 0.15rem;
+}
+.cv-entry__degree {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.cv-entry__school {
+  color: #69717d;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+.cv-entry__detail {
+  margin-top: 0.25rem;
+  color: #69717d;
+  font-size: 0.88rem;
+  font-style: italic;
+}
+@media screen and (max-width: 760px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+</style>
+
 Education
 ======
 

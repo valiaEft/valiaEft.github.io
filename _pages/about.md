@@ -14,7 +14,7 @@ Research wise I am interested in the interplay between machine learning algorith
 <section class="interest-panel" id="research-interests">
   <h2>Research Interests</h2>
   <ul class="interest-tags">
-    <li>Algorithmic Fairness</li>
+    <li>Algorithms</li>
     <li>Strategic Classification</li>
     <li>Trustworthy ML</li>
     <li>Optimization</li>
